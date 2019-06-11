@@ -1,0 +1,117 @@
+{
+  "id": "00f46cad-da82-497c-893e-806bdfb69138",
+  "version": "2.0",
+  "name": "BuscarPeli",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "ec19eed8-7783-4905-911a-0c39b579772f",
+    "name": "prueba",
+    "commands": [{
+      "id": "78b92eb9-fb9a-4dbd-86f8-eeb78bce9230",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d45664fa-266c-422e-acf8-4c9d1febf3d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1027x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8aa14a64-dcc6-42a8-863a-efe699496363",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49dbe9d9-f996-41ab-b80e-2d156355949d",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "el pianista 1998"
+    }, {
+      "id": "6364efd7-bd8e-41b2-969e-147a08792872",
+      "comment": "",
+      "command": "click",
+      "target": "css=.magnifyingglass",
+      "targets": [
+        ["css=.magnifyingglass", "css:finder"],
+        ["xpath=//button[@id='navbar-submit-button']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b3ffe2a-1007-49f8-8e0b-33b8321e982e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=La leggenda del pianista sull'oceano",
+      "targets": [
+        ["linkText=La leggenda del pianista sull'oceano", "linkText"],
+        ["css=.odd > .result_text > a", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0120731/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53471eb-9075-4db0-991a-d83859deb310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi3952017689?playlistId=tt0120731&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "199637c5-13cf-486a-9050-996c818502c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-video",
+      "targets": [
+        ["css=.jw-video", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[2]/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b2ebdf-7808-4a51-86bb-0be0101324d2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cba834b2-62b6-497b-9917-1e63b8686243",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec19eed8-7783-4905-911a-0c39b579772f"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
